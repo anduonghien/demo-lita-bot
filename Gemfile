@@ -12,7 +12,7 @@ gem "lita"
 # For example:
 # gem "lita-google-images"
 # gem "lita-karma"
-gem "lita-slack"
+# gem "lita-slack"
 gem "lita-google"
 gem 'lita-chatwork'
 gem "chatwork"
