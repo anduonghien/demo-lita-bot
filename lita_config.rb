@@ -14,4 +14,8 @@ Lita.configure do |config|
   # heroku の redis アドオン Redis To Go 関連の設定
   config.redis[:url] = ENV["REDISTOGO_URL"]
   config.http.port   = ENV["PORT"]
+
+  config.robot.adapter = :chatwork
+  config.adapters.chatwork.api_key = ENV['CHATWORK_API_KEY']
+  config.adapters.chatwork.interval = 5
 end
