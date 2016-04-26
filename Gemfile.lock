@@ -26,6 +26,9 @@ GEM
       thor (>= 0.18.1)
     lita-google (1.1.0)
       lita (>= 4.0)
+    lita-hipchat (3.0.2)
+      lita (>= 4.4.3)
+      xmpp4r (>= 0.5.6)
     lita-slack (1.7.2)
       eventmachine
       faraday
@@ -46,6 +49,7 @@ GEM
     websocket-driver (0.6.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    xmpp4r (0.5.6)
 
 PLATFORMS
   ruby
@@ -53,6 +57,7 @@ PLATFORMS
 DEPENDENCIES
   lita
   lita-google
+  lita-hipchat
   lita-slack
 
 BUNDLED WITH
