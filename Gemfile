@@ -12,5 +12,5 @@ gem "lita-hipchat"
 # For example:
 # gem "lita-google-images"
 # gem "lita-karma"
-gem "lita-slack"
+# gem "lita-slack"
 gem "lita-google"
