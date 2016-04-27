@@ -24,4 +24,6 @@ Lita.configure do |config|
   config.robot.adapter = :chatwork
   config.adapters.chatwork.api_key = ENV["CHATWORK_API_KEY"]
   config.adapters.chatwork.interval = 5
+
+  config.handlers.forecast.api_key = ENV["forecast_API_KEY"]
 end
