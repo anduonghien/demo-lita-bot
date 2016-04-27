@@ -12,8 +12,8 @@ Lita.configure do |config|
   # config.adapters.slack.token = ENV["SLACK_API_KEY"]
 
   # heroku の redis アドオン Redis To Go 関連の設定
-  # config.redis[:url] = ENV["REDISTOGO_URL"]
-  # config.http.port   = ENV["PORT"]
+  config.redis[:url] = ENV["REDISTOGO_URL"]
+  config.http.port   = ENV["PORT"]
 
   # config.robot.adapter = :hipchat
   # config.adapters.hipchat.jid = "570358_3857347@chat.hipchat.com"
