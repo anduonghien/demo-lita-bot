@@ -15,3 +15,4 @@ gem "lita-google"
 # gem "lita-slack"
 gem "lita-chatwork"
 gem "chatwork"
+gem 'lita-ai'
