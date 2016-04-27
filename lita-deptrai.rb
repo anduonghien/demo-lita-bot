@@ -6,7 +6,7 @@ module Lita
 
       def with_deptrai( response )
         word = response.matches[0][0]
-        response.reply("#{word} dep trai")
+        response.reply("#{word} handsome. Good morning.")
       end
       Lita.register_handler(self)
     end

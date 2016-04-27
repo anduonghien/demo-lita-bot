@@ -1,7 +1,7 @@
 Lita.configure do |config|
   require './lita-deptrai'
   # The name your robot will use.
-  config.robot.name      = "An Duong"
+  config.robot.name      = "AnDuong"
   config.robot.log_level = :info
 
   # アダプタの指定。Slack とつなげるので、:slack と修正する
@@ -12,12 +12,16 @@ Lita.configure do |config|
   # config.adapters.slack.token = ENV["SLACK_API_KEY"]
 
   # heroku の redis アドオン Redis To Go 関連の設定
-  config.redis[:url] = ENV["REDISTOGO_URL"]
-  config.http.port   = ENV["PORT"]
+  # config.redis[:url] = ENV["REDISTOGO_URL"]
+  # config.http.port   = ENV["PORT"]
 
-  config.robot.adapter = :hipchat
-  config.adapters.hipchat.jid = ENV["HIPCHAT_jid"]
-  config.adapters.hipchat.password = ENV["HIPCHAT_PASSWORD"]
-  config.adapters.hipchat.debug = true
-  config.adapters.hipchat.rooms = :all
+  # config.robot.adapter = :hipchat
+  # config.adapters.hipchat.jid = "570358_3857347@chat.hipchat.com"
+  # config.adapters.hipchat.password = "anduong@123"
+  # config.adapters.hipchat.debug = true
+  # config.adapters.hipchat.rooms = :all
+
+  config.robot.adapter = :chatwork
+  config.adapters.chatwork.api_key = ENV["CHATWORK_API_KEY"]
+  config.adapters.chatwork.interval = 5
 end
