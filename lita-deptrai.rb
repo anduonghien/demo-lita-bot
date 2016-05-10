@@ -6,7 +6,12 @@ module Lita
 
       def with_deptrai( response )
         word = response.matches[0][0]
-        response.reply("#{word} handsome. Good morning.")
+        response.reply("
+          #{word} handsome. Good morning. 
+          From Room ID: #{response.room.id},
+          From User ID: #{response.user.id},
+          "
+        )
       end
       Lita.register_handler(self)
     end

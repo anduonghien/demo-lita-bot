@@ -15,9 +15,3 @@ gem "lita-google"
 # gem "lita-slack"
 gem "lita-chatwork"
 gem "chatwork"
-# gem 'lita-ai'
-gem 'lita-ascii-art'
-# gem "lita-broadcast"
-gem 'lita-forecast'
-gem "lita-gems"
-gem "lita-octocat"
